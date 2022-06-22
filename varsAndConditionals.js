@@ -79,19 +79,19 @@ if (coinLandsHeads !== false) {
 
 //Let's see how this battle will play out if it continues. Create a for loop that will have Jamie attack Jon 5 times. Console log Jon Snow's health after each attack.
 
-// for (let i = 0; i < 5; i++) {
-//   jonSnowHealth -= jamieLannisterAttack - jonSnowDefense;
-//   if (jonSnowHealth <= 0) {
-//     console.log(`Jon has been slain`);
-//   } else {
-//     console.log(`jon Snow's health is ${jonSnowHealth}`);
-//   }
-// }
-
-while (jonSnowHealth > 0) {
+for (let i = 0; i < 5; i++) {
   jonSnowHealth -= jamieLannisterAttack - jonSnowDefense;
-  console.log(`jon's health is now ${jonSnowHealth}`);
   if (jonSnowHealth <= 0) {
-    console.log(`jon has been slain`);
+    console.log(`Jon has been slain`);
+  } else {
+    console.log(`jon Snow's health is ${jonSnowHealth}`);
   }
 }
+
+// while (jonSnowHealth > 0) {
+//   jonSnowHealth -= jamieLannisterAttack - jonSnowDefense;
+//   console.log(`jon's health is now ${jonSnowHealth}`);
+//   if (jonSnowHealth <= 0) {
+//     console.log(`jon has been slain`);
+//   }
+// }
